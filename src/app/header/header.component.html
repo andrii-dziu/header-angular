@@ -1,0 +1,66 @@
+<header class="header">
+  
+  <div class="header_content">
+    <div class="adaptive_content">
+      <i class="fas fa-bars"></i>
+      <div class="header_logo">
+        <h1>tile.expert</h1>
+      </div>
+   </div>
+    <div class="nav_search_wrapper">
+      <div class="header_nav">
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#">Cсылки</a>
+            <i class="fas fa-sort-down"></i>
+          </li>
+          <li class="nav_item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">Теги</a>
+            <i class="fas fa-sort-down"></i>
+          </li>
+          <li class="nav_item">
+            <a href="#">Просьбы</a>
+            <i class="fas fa-sort-down"></i>
+          </li>
+          <li class="nav_item">
+            <a href="#">Избранное</a>
+            <i class="fas fa-sort-down"></i>
+          </li>
+          <li class="nav_item">
+            <a href="#">Посещение</a>
+            <i class="fas fa-sort-down"></i>
+          </li>
+        </ul>
+        <a (click)="clickEvent()" class="search_item"><i class="fas fa-search"></i></a>
+        <div class=" input-group mb-3 hidden_search" [ngClass]=" active ? 'active' : ''">
+          <div class="input_icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-times" (click)="clickEvent()"></i>
+          </div>
+          <input type="text" class="form-control" style="border: none;">
+          <div class="input-group-prepend">
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">Найти</span>
+          </div>
+        </div>
+      </div>
+      <a class="search_item hide_link"><i class="fas fa-plus-circle"></i></a>
+    </div>
+
+    <div class="header_profile">
+      <ul class="profile_items">
+        <li class="profile_icon"><i class="far fa-envelope"></i></li>
+        <li class="profile_icon">
+          <i class="far fa-bell"><span class="fa-layers-counter" style="background:red">18</span></i>
+
+        </li>
+        <li class="profile_picture"></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
