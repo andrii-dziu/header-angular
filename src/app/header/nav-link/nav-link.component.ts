@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'app-nav-link',
@@ -13,22 +13,27 @@ export class NavLinkComponent implements OnInit {
   }
   links = [
     {
-      name :  'Ссылки'
+      name :  "Ссылки",
+      icon : "fas fa-sort-down"
     },
     {
-      name :  'Контакты'
+      name :  "Контакты"
     },
     {
-      name :  'Теги'
+      name :  "Теги",
+      icon : "fas fa-sort-down"
     },
     {
-      name :  'Просьбы'
+      name :  "Просьбы",
+      icon : "fas fa-sort-down"
     },
     {
-      name :  'Избранное'
+      name :  "Избранное",
+      icon : "fas fa-sort-down"
     },
     {
-      name : 'Посещение'
+      name : "Посещение",
+      icon : "fas fa-sort-down"
     }
     ]
 }

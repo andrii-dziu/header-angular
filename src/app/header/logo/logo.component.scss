@@ -5,6 +5,9 @@
 	  color: #ffff;
 	  font-weight: 100;
 	}
+	h1:first-letter {
+		color: red;
+	}
   }
 
   @media (max-width: 991px) {
