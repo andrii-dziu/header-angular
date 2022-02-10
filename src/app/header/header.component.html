@@ -1,16 +1,20 @@
 <header class="header">
-  
   <div class="header_content">
     <div class="adaptive_content">
       <i class="fas fa-bars"></i>
-      <div class="header_logo">
-        <h1>tile.expert</h1>
-      </div>
+      <app-logo></app-logo>
    </div>
     <div class="nav_search_wrapper">
       <div class="header_nav">
-        <ul class="nav_items">
-          <li class="nav_item">
+        <!-- <ul class="nav_items" > -->
+          <!-- <app-nav-link></app-nav-link>
+          <app-nav-link></app-nav-link>
+          <app-nav-link></app-nav-link>
+          <app-nav-link></app-nav-link>
+          <app-nav-link></app-nav-link>
+          <app-nav-link></app-nav-link> -->
+          <app-nav-links-list></app-nav-links-list>
+          <!-- <li class="nav_item">
             <a href="#">Cсылки</a>
             <i class="fas fa-sort-down"></i>
           </li>
@@ -32,20 +36,16 @@
           <li class="nav_item">
             <a href="#">Посещение</a>
             <i class="fas fa-sort-down"></i>
-          </li>
-        </ul>
+          </li> -->
+        <!-- </ul> -->
         <a (click)="clickEvent()" class="search_item"><i class="fas fa-search"></i></a>
         <div class=" input-group mb-3 hidden_search" [ngClass]=" active ? 'active' : ''">
           <div class="input_icons">
             <i class="fas fa-search"></i>
             <i class="fas fa-times" (click)="clickEvent()"></i>
-          </div>
-          <input type="text" class="form-control" style="border: none;">
-          <div class="input-group-prepend">
-          </div>
-          <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">Найти</span>
-          </div>
+          </div>         
+            <input type="text" name="search" class="form-control" style="border: none;">
+            <button class="search_button" type="submit">Найти</button>        
         </div>
       </div>
       <a class="search_item hide_link"><i class="fas fa-plus-circle"></i></a>
@@ -64,3 +64,5 @@
     </div>
   </div>
 </header>
+
+

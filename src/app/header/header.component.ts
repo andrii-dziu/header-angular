@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 
 @Component({
   selector: 'app-header',

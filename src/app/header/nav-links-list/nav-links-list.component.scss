@@ -1,0 +1,11 @@
+app-nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@media (max-width: 991px) {
+	.nav_items{
+		display: none;
+	} 
+}
